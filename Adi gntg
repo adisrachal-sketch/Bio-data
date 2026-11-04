@@ -1,0 +1,622 @@
+// 1
+import java.util.Scanner;
+public class BalikKalimat {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan kalimat: ");
+        String kalimat = input.nextLine();
+        String hasil = new StringBuilder(kalimat).reverse().toString();
+        System.out.println(hasil);
+    }
+}
+
+// 2
+import java.util.Scanner;
+public class HitungHuruf {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan kalimat: ");
+        String kalimat = input.nextLine();
+        System.out.print("Masukkan huruf yang dicari: ");
+        char huruf = input.next().charAt(0);
+        int jumlah = 0;
+        for(int i=0; i<kalimat.length(); i++){
+            if(kalimat.charAt(i)==huruf) jumlah++;
+        }
+        System.out.println("Jumlah huruf: "+jumlah);
+    }
+}
+
+// 3
+import java.util.Scanner;
+public class HitungKarakter {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan kalimat: ");
+        String kalimat = input.nextLine();
+        System.out.println("Jumlah karakter: "+kalimat.length());
+    }
+}
+
+// 4
+public class Tampil4 {
+    public static void main(String[] args) {
+        System.out.println("122333444455555666666");
+    }
+}
+
+// 5
+public class Tampil5 {
+    public static void main(String[] args) {
+        System.out.println("66666655555444333221");
+    }
+}
+
+// 6
+public class Tampil6 {
+    public static void main(String[] args) {
+        System.out.println("11212312412345123456");
+    }
+}
+
+// 7
+public class Tampil7 {
+    public static void main(String[] args) {
+        System.out.println("654321543214321321211");
+    }
+}
+
+// 8
+public class Tampil8 {
+    public static void main(String[] args) {
+        System.out.println("11233312345555123456");
+    }
+}
+
+// 9
+public class Tampil9 {
+    public static void main(String[] args) {
+        System.out.println("12212344441234566666");
+    }
+}
+
+// 10
+public class Tampil10 {
+    public static void main(String[] args) {
+        System.out.println("654321555554321333211");
+    }
+}
+
+// 11
+public class Tampil11 {
+    public static void main(String[] args) {
+        System.out.println("6666612345444123221");
+    }
+}
+
+// 12
+public class Tampil12 {
+    public static void main(String[] args) {
+        System.out.println("122123123455556666661234567123456789999999");
+    }
+}
+
+// 13
+public class Tampil13 {
+    public static void main(String[] args) {
+        System.out.println("112333444412345123456777778888888123456789");
+    }
+}
+
+// 14
+public class Tampil14 {
+    public static void main(String[] args) {
+        System.out.println("888888887777777654321543214444333211");
+    }
+}
+
+// 15
+public class Tampil15 {
+    public static void main(String[] args) {
+        System.out.println("8765432176543216666655554321321221");
+    }
+}
+
+// 16
+public class Deret16 {
+    public static void main(String[] args) {
+        int n = 1;
+        for(int i=0; i<8; i++){
+            System.out.print(n+" ");
+            n += 2;
+        }
+    }
+}
+
+// 17
+public class Deret17 {
+    public static void main(String[] args) {
+        int a = 2;
+        for(int i=0; i<9; i++){
+            System.out.print(a+" ");
+            if(i%2==0) a += 10;
+            else a -= 5;
+        }
+    }
+}
+
+// 18
+public class Deret18 {
+    public static void main(String[] args) {
+        int a = 5;
+        for(int i=0; i<12; i++){
+            System.out.print(a+" ");
+            if(i%2==0) a -= 3;
+            else a += 5;
+        }
+    }
+}
+
+// 19
+public class Deret19 {
+    public static void main(String[] args) {
+        int a = 3;
+        for(int i=0; i<10; i++){
+            System.out.print(a+" ");
+            if(i%2==0) a *= 3;
+            else a -= 5;
+        }
+    }
+}
+
+// 20
+public class Deret20 {
+    public static void main(String[] args) {
+        int a = 1;
+        int[] tambah = {1,2,3};
+        int idx = 0;
+        for(int i=0; i<12; i++){
+            System.out.print(a+" ");
+            a += tambah[idx];
+            idx = (idx+1)%3;
+        }
+    }
+}
+
+// 21
+public class Deret21 {
+    public static void main(String[] args) {
+        int a = 1;
+        for(int i=0; i<10; i++){
+            System.out.print(a+" ");
+            a *= 2;
+        }
+    }
+}
+
+// 22
+import java.util.Scanner;
+public class Faktorial {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan n: ");
+        int n = input.nextInt();
+        int hasil = 1;
+        for(int i=1; i<=n; i++) hasil *= i;
+        System.out.println(n+"! = "+hasil);
+    }
+}
+
+// 23
+import java.util.Scanner;
+public class FibonacciMaks {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan nilai maksimal: ");
+        int maks = input.nextInt();
+        int a=0, b=1;
+        while(a <= maks){
+            System.out.print(a+" ");
+            int temp = a;
+            a = b;
+            b = temp + b;
+        }
+    }
+}
+
+// 24
+import java.util.Scanner;
+public class KabisatAkhir0 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("n awal: ");
+        int awal = input.nextInt();
+        System.out.print("n akhir: ");
+        int akhir = input.nextInt();
+        for(int tahun = awal; tahun <= akhir; tahun++){
+            if((tahun % 4 == 0 && tahun % 100 != 0) || tahun % 400 == 0){
+                if(tahun % 10 == 0){
+                    System.out.print(tahun + " ");
+                }
+            }
+        }
+    }
+}
+
+// 25
+import java.util.Scanner;
+public class KabisatAkhir2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int tahun = awal; tahun <= akhir; tahun++){
+            if(((tahun % 4 == 0 && tahun % 100 != 0) || tahun % 400 == 0) && tahun % 10 == 2){
+                System.out.print(tahun + " ");
+            }
+        }
+    }
+}
+
+// 26
+import java.util.Scanner;
+public class KabisatAkhir4 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int tahun = awal; tahun <= akhir; tahun++){
+            if(((tahun % 4 == 0 && tahun % 100 != 0) || tahun % 400 == 0) && tahun % 10 == 4){
+                System.out.print(tahun + " ");
+            }
+        }
+    }
+}
+
+// 27
+import java.util.Scanner;
+public class KabisatAkhir6 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int tahun = awal; tahun <= akhir; tahun++){
+            if(((tahun % 4 == 0 && tahun % 100 != 0) || tahun % 400 == 0) && tahun % 10 == 6){
+                System.out.print(tahun + " ");
+            }
+        }
+    }
+}
+
+// 28
+import java.util.Scanner;
+public class KabisatAkhir8 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int tahun = awal; tahun <= akhir; tahun++){
+            if(((tahun % 4 == 0 && tahun % 100 != 0) || tahun % 400 == 0) && tahun % 10 == 8){
+                System.out.print(tahun + " ");
+            }
+        }
+    }
+}
+
+// 29
+import java.util.Scanner;
+public class Habis3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int i = awal; i <= akhir; i++){
+            if(i % 3 == 0) System.out.print(i + " ");
+        }
+    }
+}
+
+// 30
+import java.util.Scanner;
+public class Habis4 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int i = awal; i <= akhir; i++){
+            if(i % 4 == 0) System.out.print(i + " ");
+        }
+    }
+}
+
+// 31
+import java.util.Scanner;
+public class Habis5 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int i = awal; i <= akhir; i++){
+            if(i % 5 == 0) System.out.print(i + " ");
+        }
+    }
+}
+
+// 32
+import java.util.Scanner;
+public class Habis6 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int i = awal; i <= akhir; i++){
+            if(i % 6 == 0) System.out.print(i + " ");
+        }
+    }
+}
+
+// 33
+import java.util.Scanner;
+public class Habis7 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal = input.nextInt();
+        int akhir = input.nextInt();
+        for(int i = awal; i <= akhir; i++){
+            if(i % 7 == 0) System.out.print(i + " ");
+        }
+    }
+}
+
+// 34
+import javax.swing.*;
+import java.awt.*;
+
+public class Animasi34 extends JFrame {
+    private int x = 0;
+    private boolean arahKanan = true;
+
+    public Animasi34() {
+        setTitle("Nomor 34");
+        setSize(600, 150);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+
+        Timer timer = new Timer(30, e -> {
+            if (arahKanan) {
+                x += 3;
+                if (x >= 550) arahKanan = false;
+            } else {
+                x -= 3;
+                if (x <= 0) arahKanan = true;
+            }
+            repaint();
+        });
+        timer.start();
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setFont(new Font("Arial", Font.BOLD, 40));
+        g.drawString("0", x, 50);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Animasi34::new);
+    }
+}
+
+// 35
+import javax.swing.*;
+import java.awt.*;
+
+public class Animasi35 extends JFrame {
+    private int x = 0;
+    private boolean arahKanan = true;
+
+    public Animasi35() {
+        setTitle("Nomor 35");
+        setSize(600, 150);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+
+        Timer timer = new Timer(30, e -> {
+            if (arahKanan) {
+                x += 3;
+                if (x >= 550) arahKanan = false;
+            } else {
+                x -= 3;
+                if (x <= 0) arahKanan = true;
+            }
+            repaint();
+        });
+        timer.start();
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setFont(new Font("Arial", Font.BOLD, 40));
+        g.drawString("0", x, 50);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Animasi35::new);
+    }
+}
+
+// 36
+import javax.swing.*;
+import java.awt.*;
+
+public class Animasi36 extends JFrame {
+    private int x = 0;
+    private boolean arahKanan = true;
+
+    public Animasi36() {
+        setTitle("Nomor 36");
+        setSize(600, 150);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+
+        Timer timer = new Timer(30, e -> {
+            if (arahKanan) {
+                x += 3;
+                if (x >= 550) arahKanan = false;
+            } else {
+                x -= 3;
+                if (x <= 0) arahKanan = true;
+            }
+            repaint();
+        });
+        timer.start();
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setFont(new Font("Arial", Font.BOLD, 40));
+        g.drawString("0", x, 120);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Animasi36::new);
+    }
+}
+
+// 37
+import javax.swing.*;
+import java.awt.*;
+
+public class Animasi37 extends JFrame {
+    private int x = 0;
+    private boolean arahKanan = true;
+
+    public Animasi37() {
+        setTitle("Nomor 37");
+        setSize(600, 150);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+
+        Timer timer = new Timer(30, e -> {
+            if (arahKanan) {
+                x += 3;
+                if (x >= 550) arahKanan = false;
+            } else {
+                x -= 3;
+                if (x <= 0) arahKanan = true;
+            }
+            repaint();
+        });
+        timer.start();
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setFont(new Font("Arial", Font.BOLD, 40));
+        g.drawString("0", x, 120);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Animasi37::new);
+    }
+}
+
+// 38
+import javax.swing.*;
+import java.awt.*;
+
+public class Animasi38 extends JFrame {
+    private int y = 0;
+    private boolean arahBawah = true;
+
+    public Animasi38() {
+        setTitle("Nomor 38");
+        setSize(150, 600);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+
+        Timer timer = new Timer(30, e -> {
+            if (arahBawah) {
+                y += 3;
+                if (y >= 550) arahBawah = false;
+            } else {
+                y -= 3;
+                if (y <= 0) arahBawah = true;
+            }
+            repaint();
+        });
+        timer.start();
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setFont(new Font("Arial", Font.BOLD, 40));
+        g.drawString("0", 50, y);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Animasi38::new);
+    }
+}
+
+// 39
+import javax.swing.*;
+import java.awt.*;
+
+public class Animasi39 extends JFrame {
+    private int y = 0;
+    private boolean arahBawah = true;
+
+    public Animasi39() {
+        setTitle("Nomor 39");
+        setSize(150, 600);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+
+        Timer timer = new Timer(30, e -> {
+            if (arahBawah) {
+                y += 3;
+                if (y >= 550) arahBawah = false;
+            } else {
+                y -= 3;
+                if (y <= 0) arahBawah = true;
+            }
+            repaint();
+        });
+        timer.start();
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setFont(new Font("Arial", Font.BOLD, 40));
+        g.drawString("0", 50, y);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Animasi39::new);
+    }
+}
+
+// 40
+import javax.swing.*;
+import java.awt.*;
+
+public class Animasi40 extends JFrame {
+    private int y = 0;
+    private boolean arahBawah = true;
+
+    public Animasi40() {
+        setTitle("Nomor 40");
+        setSize(150, 600);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+
+        Timer timer = new Timer(30, e -> {
+            if (arahBawah) {
+                y += 3;
+                if (y >= 550)
